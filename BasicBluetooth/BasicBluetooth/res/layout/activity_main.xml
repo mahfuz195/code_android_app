@@ -1,0 +1,88 @@
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+    <!-- Here you put the rest of your current view-->
+  <RelativeLayout 
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+  	android:layout_height="wrap_content"
+    >
+
+    <Button
+        android:id="@+id/bt_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_disable"
+        android:layout_alignRight="@+id/bt_disable"
+        android:layout_below="@+id/bt_disable"
+        android:text="@string/text_scan" />
+
+    <EditText
+        android:hint="@string/text_tppe_to_send"
+        android:id="@+id/edtx_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_connect"
+        android:layout_alignRight="@+id/bt_connect"
+        android:layout_below="@+id/bt_connect"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtx_data"
+        android:layout_alignRight="@+id/edtx_data"
+        android:layout_below="@+id/edtx_data"
+        android:text="@string/text_send" />
+
+    <Button
+        android:id="@+id/bt_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_scan"
+        android:layout_alignRight="@+id/bt_scan"
+        android:layout_below="@+id/bt_scan"
+        android:text="@string/text_connect" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_send"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_data_receieved"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/bt_disable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_disable" />
+
+    <TextView
+        android:id="@+id/tx_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_send"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="18dp"
+        android:text="@string/text_data_receieved"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF0000" />
+
+</RelativeLayout>
+</ScrollView>
